@@ -15,7 +15,7 @@ const defaultState = {
   comments
 };
 
-// You can pass in an object literal in the [defaultState] position
+// able to pass in an object literal in the [defaultState] position
 const store = createStore(rootReducer, defaultState); 
 
 export const history = syncHistoryWithStore(browerHistory, store);
