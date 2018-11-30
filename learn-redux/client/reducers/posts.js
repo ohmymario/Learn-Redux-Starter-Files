@@ -11,6 +11,7 @@
 // Create multiple reducers, then combine them into a larger 'root reducer'
 
 function posts(state = [], action) {
+  console.log('The post will change');
   console.log(state, action);
   return state;
 }
