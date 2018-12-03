@@ -4,8 +4,10 @@ import { connect } from 'react-redux';
 // Import all actionCreator methods 
 import * as actionCreators from '../actions/actionCreators';
 
+// Component to pass props into
 import Main from './Main';
 
+// State
 function mapsStateToProps(state) {
   return {
     posts: state.posts,
@@ -13,10 +15,12 @@ function mapsStateToProps(state) {
   }
 }
 
-function mapsDispatchToProps(dispatch) {
+// actionCreators
+function mapDispatchToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch);
 } 
 
-const App = connect(mapsStateToProps, mapsDispatchToProps)(Main);
+// Surface State and actionCreators to the "Main" component
+const App = connect(mapsStateToProps, mapDispatchToProps)(Main);
 
 export default App;
