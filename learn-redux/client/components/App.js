@@ -1,3 +1,5 @@
+// COMBINE PROPS, ACTIONCREATORS AND MAIN COMPONENT
+
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
