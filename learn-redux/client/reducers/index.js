@@ -4,7 +4,7 @@ import { combineReducers } from 'redux';
 // then we have to use routerReducer
 import { routerReducer } from 'react-router-redux';
 
-// Reducers
+// Reducers to be "combined"
 import posts from './posts';
 import comments from './comments';
 
