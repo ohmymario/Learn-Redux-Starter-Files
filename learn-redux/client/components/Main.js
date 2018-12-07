@@ -7,10 +7,10 @@ const Main = React.createClass({
       <div>
         <h1>
           <Link to='/'>Reduxstagram</Link>
+        </h1>
           {/* populated by react-router */}
           {/* Pass props into changing components */}
           {React.cloneElement(this.props.children, this.props)}
-        </h1>
       </div>
     )
   }
